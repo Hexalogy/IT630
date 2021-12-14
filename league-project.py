@@ -7,7 +7,7 @@ import numpy as np
 #Finds data for a user and server.
 def requestSummonerData(server, summonerName, APIKey):
     #URL = "https://" + server + ".api.pvp.net/api/lol/" + server + "/v4/summoner/by-name/" + summonerName + "?api_key=" + APIKey
-    APIKey = "RGAPI-e16b87f1-95f5-4927-ae19-3e9baa0c6649"
+    APIKey = "[REDACTED]"
     server = "na1"
     summonerName = "Jamishio" #This will have to be removed
     
@@ -24,7 +24,7 @@ def requestSummonerData(server, summonerName, APIKey):
 def matchList(accountId, APIKey):
 
     URL = "https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/" + accountId + "?api_key="  + APIKey
-    #APIKey = "RGAPI-bb2d9042-4ec2-4cc1-a212-3ba3e24a64ad"
+    #APIKey = "[REDACTED]"
     response = requests.get(URL)
     return response.json()
 
